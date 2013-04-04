@@ -1,0 +1,28 @@
+<head>
+  <title>Inspirational Quotes</title>
+  <style>
+  body {
+  	font-family: Georgia, serif;
+  	background-color: #AAAAFF;
+  }
+  .container {
+  	width: 720px;
+  }
+  </style>
+
+</head>
+
+<body>
+  {{> quote}}
+</body>
+
+<template name="quote">
+	<div class="container">
+		<h1>Quote of the day:</h1>
+		<br />
+		<blockquote>
+			<p>The quick brown fox jumps over the lazy dog.</p>
+			<small>Someone famous</small>
+		</blockquote>
+	</div>
+</template>
