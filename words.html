@@ -13,16 +13,18 @@
 </head>
 
 <body>
-  {{> quote}}
+  <div id="fb-root"></div>
+  <div class="container">
+    {{> quote}}
+    <div class="fb-like" data-href="http://inspiration.meteor.com/" data-send="true" data-width="450" data-show-faces="true"></div>
+  </div>
 </body>
 
 <template name="quote">
-	<div class="container">
-		<h1>Quote of the day:</h1>
-		<br />
-		<blockquote>
-			<p>The quick brown fox jumps over the lazy dog.</p>
-			<small>Someone famous</small>
-		</blockquote>
-	</div>
+	<h1>Quote of the day:</h1>
+	<br />
+	<blockquote>
+		<p>The quick brown fox jumps over the lazy dog.</p>
+		<small>Someone famous</small>
+	</blockquote>
 </template>
